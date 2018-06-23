@@ -1,0 +1,27 @@
+{
+  "basics":{
+    "name":"Mounika",
+    "email":"dhanyamounika11@gmail.com",
+    "mobile":"9999999999"
+  },
+"education":[
+  {
+    "degree":"B-Tech",
+    "institute":"PSCMR",
+    "data":["2015-19","87%"]
+  },
+
+  {
+    "degree":"Intermediate/Diploma",
+    "institute":"Sri Chaitanya",
+    "data":["2013-15","97.1%"]
+  },
+
+  {
+    "degree":"S.S.C",
+    "institute":"STBEMHS",
+    "data":["2012-13","9.7"]
+  }
+]
+
+}
