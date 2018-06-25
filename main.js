@@ -13,12 +13,38 @@ function loadJson(file,callback){
 loadJson("data.json",function(text){
   let data=JSON.parse(text);
   console.log(data);
+  fun_career(data.career); // career means calling Career . here 'data' means json file name
   fun_education(data.education);  //abstract function
+  fun_achievements(data.achievements);
+  fun_skills(data.skills);
+
 });
 
 var div2=document.getElementById("child2");
-function fun_education(edu){
 
+// Career objective
+
+function fun_career(career_obj){
+
+  var heading1=document.createElement("h2");
+    heading1.textContent="Career Objective";//appending heading to div2
+    div2.appendChild(heading1);
+
+
+    var horz=document.createElement("hr");//giving underline to heading
+    heading1.appendChild(horz);
+
+
+    var inf=document.createElement("p");//displaying the context of career objective
+    inf.classList.add("bigger_font");
+    div2.appendChild(inf);
+    inf.textContent=career_obj.info;
+}
+
+
+//education details
+
+function fun_education(edu){
 
   var heading=document.createElement("h2");
   heading.textContent="Education Qualification";//appending heading to div2
@@ -51,20 +77,60 @@ function fun_education(edu){
     list.appendChild(listItem2);
 
   }
+}
 
 
+//achievements
+function fun_achievements(achieve){
+
+  var heading2=document.createElement("h2");
+    heading2.textContent="Achievements";//appending heading to div2
+    div2.appendChild(heading2);
 
 
+    var horz=document.createElement("hr");//giving underline to heading
+    heading2.appendChild(horz);
 
 
+     var ul=document.createElement("ul");
+     div2.appendChild(ul);
 
 
+    for(var i=0;i<achieve.length;i++)
+    {
+      var listItem3=document.createElement("li");//appending this list to ul list
+      // listItem3.style.fontWeight="550";
+      listItem3.style.fontSize="25px";
+      listItem3.innerHTML=achieve[i].name;
+      ul.appendChild(listItem3);
+
+    }
+
+}
+
+//technicalskills
+
+function fun_skills(tech){
+
+  var heading3=document.createElement("h2");
+    heading3.textContent="Technical Skills";//appending heading to div2
+    div2.appendChild(heading3);
 
 
+    var horz=document.createElement("hr");//giving underline to heading
+    heading3.appendChild(horz);
+
+    var tr="";
 
 
+     var table=document.createElement("table");//creating table tag
 
+     div2.appendChild(table);
 
+     for(i=0;i<tech.length;i++){
+       tr+="<tr><td>"+tech[i].name+"</td><td>"+tech[i].data+"</td></tr>";
+}
 
-
+table.innerHTML=tr;
+table.border="2";
 }

@@ -4,6 +4,12 @@
     "email":"dhanyamounika11@gmail.com",
     "mobile":"9999999999"
   },
+
+
+"career":{
+    "info":"To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization"
+            },
+
 "education":[
   {
     "degree":"B-Tech",
@@ -22,6 +28,44 @@
     "institute":"STBEMHS",
     "data":["2012-13","9.7"]
   }
-]
+
+],
+
+
+"achievements":[
+  {
+    "name":"Awarded as <b>1<sup>st</sup>Prize</b> in <q> self-defense</q>"
+
+  },
+
+  {
+    "name":"Awarded as <strong>1<sup>st</sup>Prize</strong> in <q> PPT </q>"
+
+  }
+
+],
+
+"skills":[
+  {
+    "name":"Programming Languages",
+    "data":["C","C++","Java","Python"]
+  },
+
+  {
+    "name":"Databases",
+    "data":["MySQL","Oracle"]
+  },
+
+  {
+    "name":"Web Technologies",
+    "data":["HTML","CSS","JS"]
+  },
+
+  {
+    "name":"Libraries",
+    "data":["Jquery","codeigniter"]
+  }
+
+  ]
 
 }
